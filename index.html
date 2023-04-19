@@ -1,16 +1,818 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prova</title>
+    <title>IlMessaggero</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>TITOLO</h1>
-    <p>difrojvfvefjiojiovefdio</p>
-    <p>difrojvfvefjiojiovefdio</p>
-    <p>difrojvfvefjiojiovefdio</p>
-    <p>difrojvfvefjiojiovefdio</p>
+
+    <header class="container">
+        <div class="row" id="ht">
+            <div class="col-md-4 col-3">
+                <button type="button" class="headerButton">
+                    <i class="ri-menu-2-line"></i></i>
+                </button>
+                <div class="input-group" id="searchArea">
+                    <button type="text" id="searchLensIcon">
+                        <i class="ri-search-eye-line"></i></button>
+                    <input type="search" class="form-control form-control-sm" style="border:0" placeholder="Cerca">
+                </div>
+            </div>
+            <div class="col-md-4 col-6" id="hc">
+                <ul class="list-group list-group-horizontal list-unstyled justify-content-center flex-wrap" id="topics">
+                    <li><a id="plainText" href="#" title="News1">Prima notizia</a></li>
+                    <li><a id="plainText" href="#" title="News2">Seconda notizia</a></li>
+                    <li><a id="plainText" href="#" title="News3">Terza notizia</a></li>
+                    <li><a id="plainText" href="#" title="News4">Quarta e ultima notizia rapida</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-3" id="hr">
+                <div id="joinUs">
+                    <button type="button" class="buttonEmphasis"> ACCEDI </button>
+                    <button type="button" class="buttonDark"> ABBONATI </button>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="" id="plainText" title="FB">
+                                <i class="ri-facebook-fill"></i></a></li>
+                        <li><a href="" id="plainText" title="YT">
+                                <i class="ri-youtube-fill"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="hb">
+            <div class="col-md-3" class="text-align-start">
+                <div>
+                    <a href="#" id="plainText" title="Forecast">
+                        <span style="font-size: 13px">
+                            Aprile
+                        </span>
+                        <span>
+                            <img src="img/sole.svg" height="20px" width="20px">
+                        </span>
+                        <span style="font-size: 13px">22.7 °C</span>
+                        <span style="font-size: 13px">Firenze</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6" id="header-logo">
+                <img src="img/logo.svg">
+            </div>
+
+            <div class="col-md-3">
+                <div id="oroscopo">
+                    <div style="font-size: 13px">
+                        <div style="font-weight: bold">Toro</div>
+                        <div>Dal 20 aprile </div>
+                    </div>
+                    <div>
+                        <img src="img/toro.svg" width="50px" height="50px">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav nav-fill" id="hnav">
+            <a class="nav-link" id="plainText" href="">PERSONE</a>
+            <a class="nav-link" id="plainText" href="">ITALIA</a>
+            <a class="nav-link" id="plainText" href="">MONDO</a>
+            <a class="nav-link" id="plainText" href="">ECONOMIA</a>
+            <a class="nav-link" id="plainText" href="">POLITICA</a>
+            <a class="nav-link" id="plainText" href="">SALUTE</a>
+            <a class="nav-link" id="plainText" href="">SCHEDE</a>
+            <a class="nav-link" id="plainText" href="">SPORT</a>
+            <a class="nav-link" id="plainText" href="">SPETTACOLI</a>
+            <a class="nav-link" id="plainText" href="">DONNA</a>
+            <a class="nav-link" id="plainText" href="">MOTORI</a>
+            <a class="nav-link buttonEmphasis text-white" id="plainText" href="">FIRENZE</a>
+            <a class="nav-link dropdown-toggle text-black" id="plainText" href="" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                EDIZIONI LOCALI
+            </a>
+        </nav>
+
+    </header>
+
+    <!-- Giornale -->
+    <div class="container">
+
+        <article>
+            <div class="paddingsDivsOnTop row">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <figure>
+                        <a href="" title="img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                class="imgOnTop">
+                        </a>
+                    </figure>
+                    <div class="titleBoldOnTop">
+                        <a href="" title="" id="plainText">
+                            What Millenials Think About Cats
+                        </a>
+                    </div>
+                    <div style="font-style: italic">di Mario Rossi</div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <figure>
+                        <a href="" title="img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                class="imgOnTop">
+                        </a>
+                    </figure>
+                    <div class="titleBoldOnTop">
+                        <a href="" title="" id="plainText">
+                            Testo incredibile dell'articolo, oppure il titolo insomma avete capito dai è una descrizione
+                            anche.
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <figure>
+                        <a href="" title="img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                class="imgOnTop">
+                        </a>
+                    </figure>
+                    <div class="titleBoldOnTop">
+                        <a href="" title="" id="plainText">
+                            Cats: A Guide to Understanding and Caring for These Feline Friends
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-3 col-sm-6">
+                    <a href="" title=""><img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                            class="advOnTopRight"></a>
+                </div>
+            </div>
+        </article>
+
+        <div class="row flex-container">
+            <section class="col-lg-8" id="notizie">
+                <article class="vspace">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <figure>
+                                <a href="" title="">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                        class="imgMainArticle">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-6 list">
+                            <div class="uppercaseClickBait">
+                                <a href="" title="" id="plainText">CLICK BAIT</a>
+                            </div>
+                            <div class="titleGridArticle">
+                                <a href="" title="" id="plainText">
+                                Orsa JJ4, i veterinari: «Non ne provocheremo la morte». Ora è in un recinto con Papillon,
+                                </a>
+                                <a href="" title="" class="emphasis">
+                                    l'unico esemplare evaso due volte.
+                                </a>
+                            </div>
+                            <ul>
+                                <a href="" title="" id="plainText">
+                                    <li>Primo</li>
+                                </a>
+                                <a href="" title="" id="plainText">
+                                    <li>Secondo</li>
+                                </a>
+                                <a href="" title="" id="plainText">
+                                    <li>Terzo</li>
+                                </a>
+                            </ul>
+                            <!-- <div style="font-style: italic">di Mario Rossi</div> -->
+                        </div>
+                    </div>
+                </article>
+
+                <article class="list">
+                    <figure>
+                        <a href="" title="">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                class="imgMainArticleTwo">
+                        </a>
+                    </figure>
+
+                    <div class="list">
+                        <div class="titleMainArticle">
+                            <a href="" title="" id="plainText">
+                                FVFIfjvfijcvuiauaIJFUHSUDHBGFUXIJDFBUNFUVB
+                            </a>
+                        </div>
+                        <div class="titleMainArticle emphasis">
+                            <a href="" title="" id="plainText">
+                                RJTGUBGUITUJVFNVGFJVNGUNBGUBBUGNBUNGBNIGUNBGTUBUGBGGBJ
+                            </a>
+                        </div>
+
+                        <ul>
+                            <a href="" title="" id="plainText">
+                                <li>Primo</li>
+                            </a>
+                            <a href="" title="" id="plainText">
+                                <li>Secondo</li>
+                            </a>
+                            <a href="" title="" id="plainText">
+                                <li>Terzo</li>
+                            </a>
+                        </ul>
+                        <div style="font-style: italic">di Mario Rossi</div>
+                    </div>
+                </article>
+
+                <hr>
+
+                <article>
+                    <div class="paddingsDivsOnTop row">
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                            <figure>
+                                <a href="" title="img">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                        class="imgOnTop">
+                                </a>
+                            </figure>
+                            <div class="titleBoldOnTop">
+                                <a href="" title="" id="plainText">
+                                    Testo incredibile dell'articolo, oppure il titolo insomma avete capito dai è una
+                                    descrizione
+                                    anche.
+                                </a>
+                            </div>
+                            <div style="font-style: italic">di Mario Rossi</div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                            <figure>
+                                <a href="" title="img">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                        class="imgOnTop">
+                                </a>
+                            </figure>
+                            <div class="titleBoldOnTop">
+                                <a href="" title="" id="plainText">
+                                    Testo incredibile dell'articolo, oppure il titolo insomma avete capito dai è una
+                                    descrizione
+                                    anche.
+                                </a>
+                            </div>
+                            <div style="font-style: italic">di Mario Rossi</div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                            <figure>
+                                <a href="" title="img">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                        class="imgOnTop">
+                                </a>
+                            </figure>
+                            <div class="titleBoldOnTop">
+                                <a href="" title="" id="plainText">
+                                    Testo incredibile dell'articolo, oppure il titolo insomma avete capito dai è una
+                                    descrizione
+                                    anche.
+                                </a>
+                            </div>
+                            <div style="font-style: italic">di Mario Rossi</div>
+                        </div>
+                    </div>
+                </article>
+
+
+                <hr>
+
+                <article class="vspace">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <figure>
+                                <a href="" title="">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                        class="imgMainArticle">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="uppercaseClickBait">
+                                <a href="" title="" id="plainText">CLICK BAIT</a>
+                            </div>
+                            <div class="titleGridArticle">
+                                <a href="" title="" id="plainText">
+                                    Questo è l'articolo principale del giorno.
+                                    Questo è l'articolo principale del giorno.
+
+                                    Cose principali:
+                                </a>
+                            </div>
+                            <div class="list">
+                                <ul>
+                                    <a href="" title="" id="plainText">
+                                        <li>Primo</li>
+                                    </a>
+                                    <a href="" title="" id="plainText">
+                                        <li>Secondo</li>
+                                    </a>
+                                    <a href="" title="" id="plainText">
+                                        <li>Terzo</li>
+                                    </a>
+                                </ul>
+                                <div style="font-style: italic">di Mario Rossi</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <hr>
+                <article class="vspace">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <figure>
+                                <a href="" title="">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                        class="imgMainArticle">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="uppercaseClickBait">
+                                <a href="" title="" id="plainText">CLICK BAIT</a>
+                            </div>
+                            <div class="titleGridArticle">
+                                <a href="" title="" id="plainText">
+                                    Questo è l'articolo principale del giorno.
+                                    Questo è l'articolo principale del giorno.
+
+                                    Cose principali:
+                                </a>
+                            </div>
+                            <div class="list">
+                                <ul>
+                                    <a href="" title="" id="plainText">
+                                        <li>Primo</li>
+                                    </a>
+                                    <a href="" title="" id="plainText">
+                                        <li>Secondo</li>
+                                    </a>
+                                    <a href="" title="" id="plainText">
+                                        <li>Terzo</li>
+                                    </a>
+                                </ul>
+                                <div style="font-style: italic">di Mario Rossi</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article>
+                    <div class="paddingsDivsOnTop row">
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                            <figure>
+                                <a href="" title="img">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                        class="imgOnTop">
+                                </a>
+                            </figure>
+                            <div class="titleBoldOnTop">
+                                <a href="" title="" id="plainText">
+                                    Testo incredibile dell'articolo, oppure il titolo insomma avete capito dai è una
+                                    descrizione
+                                    anche.
+                                </a>
+                            </div>
+                            <div style="font-style: italic">di Mario Rossi</div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                            <figure>
+                                <a href="" title="img">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                        class="imgOnTop">
+                                </a>
+                            </figure>
+                            <div class="titleBoldOnTop">
+                                <a href="" title="" id="plainText">
+                                    Testo incredibile dell'articolo, oppure il titolo insomma avete capito dai è una
+                                    descrizione
+                                    anche.
+                                </a>
+                            </div>
+                            <div style="font-style: italic">di Mario Rossi</div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                            <figure>
+                                <a href="" title="img">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                        class="imgOnTop">
+                                </a>
+                            </figure>
+                            <div class="titleBoldOnTop">
+                                <a href="" title="" id="plainText">
+                                    Testo incredibile dell'articolo, oppure il titolo insomma avete capito dai è una
+                                    descrizione
+                                    anche.
+                                </a>
+                            </div>
+                            <div style="font-style: italic">di Mario Rossi</div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="col-lg-4" id="pubblicita">
+                <div class="somePadding lockedElement">
+                    <article class="myplayZone">
+                        <div class="paddingsDivsOnTop">
+                            <div id="myPlayIcon">
+                                <a href="" title="MyPlaySection">
+                                    <img src="img/myplay_adv.png" class="" height="40px">
+                                </a>
+                            </div>
+                        </div>
+                        <hr style="border: 1.5px solid black; margin: 0.5em auto;">
+                        <div>
+                            <figure>
+                                <a href="" title="">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                        class="imgAside">
+                                </a>
+                            </figure>
+                            <div class="titleAsideArticle">
+                                <a href="" title="" id="plainText">
+                                    Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+                                    Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+                                    Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row vspaceAside">
+                            <div class="col-4">
+                                <figure>
+                                    <a href="" title=""><img
+                                            src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                            width="100%" height="90px">
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="col-8">
+                                <div class="articleTitle-s">
+                                    <a href="" title="" id="plainText">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar
+                                        tempor erat, eu ultricies massa bibendum ut.
+                                    </a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-4">
+                                <figure>
+                                    <a href="" title=""><img
+                                            src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                            width="100%" height="90px">
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="col-8">
+                                <div class="articleTitle-s">
+                                    <a href="" title="" id="plainText">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar
+                                        tempor erat, eu ultricies massa bibendum ut.
+                                    </a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-4">
+                                <figure>
+                                    <a href="" title=""><img
+                                            src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                            width="100%" height="90px">
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="col-8">
+                                <div class="articleTitle-s">
+                                    <a href="" title="" id="plainText">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar
+                                        tempor erat, eu ultricies massa bibendum ut.
+                                    </a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-4">
+                                <figure>
+                                    <a href="" title=""><img
+                                            src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                            width="100%" height="90px">
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="col-8">
+                                <div class="articleTitle-s">
+                                    <a href="" title="" id="plainText">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar
+                                        tempor erat, eu ultricies massa bibendum ut.
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </article>
+
+                    <article class="followUs">
+                        <div class="paddingsDivsOnTop little">
+                            <div class="titleAsideArticle">
+                                Seguici e iscriviti anche su:
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <a href="" id="plainText" title="Facebook">
+                                        <i class="ri-youtube-fill"></i>
+                                    </a>
+                                    <span class="titleAsideSocial">Youtube</span>
+                                </div>
+                                <div class="col-4">
+                                    <a href="" id="plainText" title="Instagram">
+                                        <i class="ri-instagram-line"></i>
+                                    </a>
+                                    <span class="titleAsideSocial">Instagram</span>
+                                </div>
+                                <div class="col-4">
+                                    <a href="" id="plainText" title="Facebook">
+                                        <i class="ri-facebook-circle-fill"></i>
+                                    </a>
+                                    <span class="titleAsideSocial">Facebook</span>
+                                </div>
+                            </div>
+                            <div>
+                                <figure>
+                                    <a href="" title=""><img
+                                            src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                            width="100%" height="80px"></a>
+                                </figure>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="colpoDOcchio">
+                        <div>
+                            <h5>
+                                COLPO D'OCCHIO
+                            </h5>
+                            <!-- <span>
+                                ============
+                            </span> -->
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <a href="" title=""><img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                        width="100%" height="90px"></a>
+                            </div>
+                            <div class="col-8">
+                                <div>
+                                    <a href="" title="" id="plainText" style="font-weight: 650px">MARIO ROSSI</a>
+                                </div>
+                                <div class="titleAsideSocial">
+                                    <a href="" title="" id="plainText">UN TALENTO STRAORDINARIO
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section> <!-- fine barra laterale -->
+
+        </div>
+
+        <div style="text-align:center;">
+            <span align="center" class="col-xs-12 col-sm-6 sol-lg-4" style="border:1px solid black;">
+                QUI FINISCE LA DIVISIONE DELLA PAGINA CON LA BARRA LATERALE
+            </span>
+        </div>
+
+        <article>
+            <div class="paddingsDivsOnTop row">
+                <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <figure>
+                        <a href="" title="img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                class="imgOnTop">
+                        </a>
+                    </figure>
+                    <div class="titleBoldOnTop">
+                        <a href="" title="" id="plainText">
+                            Testo incredibile dell'articolo, oppure il titolo insomma avete capito dai è una
+                            descrizione
+                            anche.
+                        </a>
+                    </div>
+                    <div style="font-style: italic">di Mario Rossi</div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <figure>
+                        <a href="" title="img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                class="imgOnTop">
+                        </a>
+                    </figure>
+                    <div class="titleBoldOnTop">
+                        <a href="" title="" id="plainText">
+                            Testo incredibile dell'articolo, oppure il titolo insomma avete capito dai è una
+                            descrizione
+                            anche.
+                        </a>
+                    </div>
+                    <div style="font-style: italic">di Mario Rossi</div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <figure>
+                        <a href="" title="img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                class="imgOnTop">
+                        </a>
+                    </figure>
+                    <div class="titleBoldOnTop">
+                        <a href="" title="" id="plainText">
+                            Testo incredibile dell'articolo, oppure il titolo insomma avete capito dai è una
+                            descrizione
+                            anche.
+                        </a>
+                    </div>
+                    <div style="font-style: italic">di Mario Rossi</div>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div class="paddingsDivsOnTop row">
+                <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <figure>
+                        <a href="" title="img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                class="imgOnTop">
+                        </a>
+                    </figure>
+                    <div class="titleBoldOnTop">
+                        <a href="" title="" id="plainText">
+                            Testo incredibile dell'articolo, oppure il titolo insomma avete capito dai è una
+                            descrizione
+                            anche.
+                        </a>
+                    </div>
+                    <div style="font-style: italic">di Mario Rossi</div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <figure>
+                        <a href="" title="img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                class="imgOnTop">
+                        </a>
+                    </figure>
+                    <div class="titleBoldOnTop">
+                        <a href="" title="" id="plainText">
+                            Testo incredibile dell'articolo, oppure il titolo insomma avete capito dai è una
+                            descrizione
+                            anche.
+                        </a>
+                    </div>
+                    <div style="font-style: italic">di Mario Rossi</div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <figure>
+                        <a href="" title="img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                class="imgOnTop">
+                        </a>
+                    </figure>
+                    <div class="titleBoldOnTop">
+                        <a href="" title="" id="plainText">
+                            Testo incredibile dell'articolo, oppure il titolo insomma avete capito dai è una
+                            descrizione
+                            anche.
+                        </a>
+                    </div>
+                    <div style="font-style: italic">di Mario Rossi</div>
+                </div>
+            </div>
+        </article>
+
+    </div>
+
+
+    <!-- Footer
+    <footer>
+        <div class="container">
+            <div id="divider">
+                <div class="row">
+                    <div class="col-md-8" id="ft">
+                        <a href="" title="Il messaggero"><img src="img/logo.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+                <a href="" title="Il messaggero"><img src="img/logo.svg" height="30px"></a>
+            </div>
+        </section>
+
+        <section>
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Sezioni
+                        </h6>
+                        <p>
+                            <a href="" id="plainText">Persone</a>
+                        </p>
+                        <p>
+                            <a href="" id="plainText">Italia</a>
+                        </p>
+                        <p>
+                            <a href="" id="plainText">Mondo</a>
+                        </p>
+                        <p>
+                            <a href="" id="plainText">Economia</a>
+                        </p>
+                        <p>
+                            <a href="" id="plainText">Altro</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Edizioni Locali
+                        </h6>
+                        <p>
+                            <a href="" id="plainText">Firenze</a>
+                        </p>
+                        <p>
+                            <a href="" id="plainText">Sesto Fiorentino</a>
+                        </p>
+                        <p>
+                            <a href="" id="plainText">Calenzano</a>
+                        </p>
+                        <p>
+                            <a href="" id="plainText">Rifredi</a>
+                        </p>
+                        <p>
+                            <a href="" id="plainText">Castello</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Multimedia
+                        </h6>
+                        <p>
+                            <a href="" id="plainText">Immagini</a>
+                        </p>
+                        <p>
+                            <a href="" id="plainText">Video</a>
+                        </p>
+                        <p>
+                            <a href="" id="plainText">Podcast</a>
+                        </p>
+                        <p>
+                            <a href="" id="plainText">Remix</a>
+                        </p>
+                        <p>
+                            <a href="" id="plainText">Altro</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        Fine
+    </div>
+    </footer>
+    <!-- Footer -->
+
 </body>
+
 </html>
