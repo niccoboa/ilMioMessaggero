@@ -45,7 +45,7 @@ body {
 }
 
 .emphasis {
-    color: #b22222;
+    color: purple;
     text-decoration: none;
 }
 
@@ -75,7 +75,7 @@ body {
 }
 
 .uppercaseClickBait {
-    color: #b22222;
+    color: purple;
     font-weight: 700;
 }
 
@@ -85,7 +85,7 @@ body {
 
 .list>ul li:before {
     content: "\25A0";
-    color: #b22222;
+    color: purple;
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -236,7 +236,7 @@ li {
 }
 
 .buttonEmphasis{
-    background-color: #b22222;
+    background-color: purple;
 }
 
 .buttonDark{
