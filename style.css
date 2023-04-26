@@ -16,9 +16,9 @@ body {
     word-break: break-all
 }
 
-#plainText{
+.plainText, .plainText:hover {
     text-decoration: none;
-    color:inherit
+    color:inherit;
 }
 
 .titleGridArticle {
@@ -164,25 +164,46 @@ li {
 }
 
 #topics li{
-    margin:0 8px;
+    margin:0 8px 0 0;
     font-size: 13px;
     font-weight: bold;
+    line-height: 1.1;
 }
 
 #header-logo{
     text-align: center;
 }
 
-#oroscopo{
+#horoscope{
     justify-content: end;
+    padding-right: 10px;
     display: flex;
+    font-size: 13px;
+}
+
+
+#social{
+    justify-content: end;
+    border-left: 2px;
+    border-style: solid;
+    border-color: #e9e9e9;
+    margin-left: 15px;
+    border-bottom:0;
+    border-top:0;
+    border-right:0;
+}
+
+#forecast {
+    padding-left: 24px;
+    text-align: left;
+    font-size: 13px;
 }
 
 #searchArea{
     padding-left: 10px;
-    width:100%;
-    padding-right: 50px;
+    width:70%;
 }
+
 #searchLensIcon{
     background-color:transparent;
     padding: 5px 12px;
@@ -193,20 +214,9 @@ li {
 #joinUs button{
     color:white;
     font-weight:bold;
-    font-size:10px;
+    font-size: 12px;
     padding: 8px 22px;
     border: 0;
-}
-
-#social{
-    padding: 0 12px;
-    border-left: 2px;
-    border-style: solid;
-    border-color: #e9e9e9;
-    margin-left: 32px;
-    border-bottom:0;
-    border-top:0;
-    border-right:0;
 }
 
 #hnav{
@@ -222,7 +232,7 @@ li {
 
 .headerButton{
     background-color:white;
-    border: none; 
+    border: none;
 }
 
 .buttonEmphasis{
@@ -249,3 +259,8 @@ li {
     height: 30px;
 }
 
+/* Altro */
+
+input::placeholder {
+    font-weight: 630;
+}
