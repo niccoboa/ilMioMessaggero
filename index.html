@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IlMessaggero</title>
+    <title>IlMioMessaggero</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
@@ -22,9 +22,60 @@
 
         <div class="row" id="ht">
             <div class="col-sm h-50">
-                <button type="button" class="headerButton">
-                    <i class="ri-menu-2-line"></i></i>
+                <button class="nav-link text-black plainText" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="ri-menu-2-line"></i>
                 </button>
+
+                <div class="dropdown-menu w-50" aria-labelledby="dropdownMenuButton">
+                        <div class="text-center text-md-start mt-5">
+                            <div class="row mt-3">
+                                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                                    <!-- Links -->
+                                    <h6 class="text-uppercase fw-bold mb-4">
+                                        Sezioni
+                                    </h6>
+                                    <p>
+                                        <a href="" class="plainText">Persone</a>
+                                    </p>
+                                    <p>
+                                        <a href="" class="plainText">Italia</a>
+                                    </p>
+                                    <p>
+                                        <a href="" class="plainText">Mondo</a>
+                                    </p>
+                                    <p>
+                                        <a href="" class="plainText">Economia</a>
+                                    </p>
+                                    <p>
+                                        <a href="" class="plainText">Altro</a>
+                                    </p>
+                                </div>
+        
+                                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                                    <!-- Links -->
+                                    <h6 class="text-uppercase fw-bold mb-4">
+                                        Edizioni
+                                    </h6>
+                                    <p>
+                                        <a href="" class="plainText">Firenze</a>
+                                    </p>
+                                    <p>
+                                        <a href="" class="plainText">Sesto Fiorentino</a>
+                                    </p>
+                                    <p>
+                                        <a href="" class="plainText">Calenzano</a>
+                                    </p>
+                                    <p>
+                                        <a href="" class="plainText">Rifredi</a>
+                                    </p>
+                                    <p>
+                                        <a href="" class="plainText">Castello</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
                 <div class="input-group" id="searchArea">
                     <button type="text" id="searchLensIcon">
                         <i class="ri-search-line"></i></button>
@@ -233,7 +284,6 @@
                                     <li>Terzo</li>
                                 </a>
                             </ul>
-                            <!-- <div style="font-style: italic">di Mario Rossi</div> -->
                         </div>
                     </div>
                 </article>
@@ -624,115 +674,129 @@
 
         </div>
 
-    <div style="text-align:center;">
-        <span align="center" class="col-xs-12 col-sm-6 sol-lg-4" style="border:1px solid black;">
-            QUI FINISCE LA DIVISIONE DELLA PAGINA CON LA BARRA LATERALE
-        </span>
+        <div class="testatabox default firenze">
+            <h3 class="firenze">
+                <a href="#" title="Firenze" class="plainText">
+                    <img id="logo_firenze" src="img/duomo.svg" width="42" class="filter-green">
+                    FIRENZE
+                </a>
+                <span class="more d-md-block">
+                    <a href="#" title="Tutti gli articoli" class="plainText">
+                        Tutti gli articoli
+                    </a>
+                    <span class="mappa">
+                        <a href="#" title="Vedi la Mappa" class="plainText">
+                            <img src="img/map.svg" width="20">
+                            Mappa
+                        </a>
+                    </span>
+                </span>
+            </h3>
+        </div>
+
+        <article>
+            <div class="paddingsDivsOnTop row">
+                <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <figure>
+                        <a href="" title="img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg" class="imgOnTop">
+                        </a>
+                    </figure>
+                    <div class="titleBoldOnTop">
+                        <a href="" title="" class="plainText">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque praesentium quisquam.
+                        </a>
+                    </div>
+                    <div style="font-style: italic">di Mario Rossi</div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <figure>
+                        <a href="" title="img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg" class="imgOnTop">
+                        </a>
+                    </figure>
+                    <div class="titleBoldOnTop">
+                        <a href="" title="" class="plainText">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quas maxime assumenda magni
+                            totam. Quisquam, laudantium eos quibusdam fugiat dolorem.
+                        </a>
+                    </div>
+                    <div style="font-style: italic">di Mario Rossi</div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <figure>
+                        <a href="" title="img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg" class="imgOnTop">
+                        </a>
+                    </figure>
+                    <div class="titleBoldOnTop">
+                        <a href="" title="" class="plainText">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate laudantium qui
+                            doloremque debitis natus ex odit, commodi nulla, facilis eos.
+                        </a>
+                    </div>
+                    <div style="font-style: italic">di Mario Rossi</div>
+                </div>
+            </div>
+        </article>
+
+        <div class="testatabox boxed centro sport">
+            <h3 class="sport">
+                SPORT
+            </h3>
+        </div>
+
+        <article>
+            <div class="paddingsDivsOnTop row">
+                <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <figure>
+                        <a href="" title="img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg" class="imgOnTop">
+                        </a>
+                    </figure>
+                    <div class="titleBoldOnTop">
+                        <a href="" title="" class="plainText">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus iusto optio quod, quam
+                            similique minus fugit ipsam quos impedit totam.
+                        </a>
+                    </div>
+                    <div style="font-style: italic">di Mario Rossi</div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <figure>
+                        <a href="" title="img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg" class="imgOnTop">
+                        </a>
+                    </figure>
+                    <div class="titleBoldOnTop">
+                        <a href="" title="" class="plainText">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tenetur ratione,
+                            placeat perferendis doloremque ex eum delectus.
+                        </a>
+                    </div>
+                    <div style="font-style: italic">di Mario Rossi</div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <figure>
+                        <a href="" title="img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg" class="imgOnTop">
+                        </a>
+                    </figure>
+                    <div class="titleBoldOnTop">
+                        <a href="" title="" class="plainText">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta enim a quia.
+                        </a>
+                    </div>
+                    <div style="font-style: italic">di Mario Rossi</div>
+                </div>
+            </div>
+        </article>
+
     </div>
-
-    <article>
-        <div class="paddingsDivsOnTop row">
-            <div class="col-xs-12 col-sm-6 col-lg-4">
-                <figure>
-                    <a href="" title="img">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
-                            class="imgOnTop">
-                    </a>
-                </figure>
-                <div class="titleBoldOnTop">
-                    <a href="" title="" class="plainText">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque praesentium quisquam.
-                    </a>
-                </div>
-                <div style="font-style: italic">di Mario Rossi</div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-lg-4">
-                <figure>
-                    <a href="" title="img">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
-                            class="imgOnTop">
-                    </a>
-                </figure>
-                <div class="titleBoldOnTop">
-                    <a href="" title="" class="plainText">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quas maxime assumenda magni
-                        totam. Quisquam, laudantium eos quibusdam fugiat dolorem.
-                    </a>
-                </div>
-                <div style="font-style: italic">di Mario Rossi</div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-lg-4">
-                <figure>
-                    <a href="" title="img">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
-                            class="imgOnTop">
-                    </a>
-                </figure>
-                <div class="titleBoldOnTop">
-                    <a href="" title="" class="plainText">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate laudantium qui
-                        doloremque debitis natus ex odit, commodi nulla, facilis eos.
-                    </a>
-                </div>
-                <div style="font-style: italic">di Mario Rossi</div>
-            </div>
-        </div>
-    </article>
-
-    <article>
-        <div class="paddingsDivsOnTop row">
-            <div class="col-xs-12 col-sm-6 col-lg-4">
-                <figure>
-                    <a href="" title="img">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
-                            class="imgOnTop">
-                    </a>
-                </figure>
-                <div class="titleBoldOnTop">
-                    <a href="" title="" class="plainText">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus iusto optio quod, quam
-                        similique minus fugit ipsam quos impedit totam.
-                    </a>
-                </div>
-                <div style="font-style: italic">di Mario Rossi</div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-lg-4">
-                <figure>
-                    <a href="" title="img">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
-                            class="imgOnTop">
-                    </a>
-                </figure>
-                <div class="titleBoldOnTop">
-                    <a href="" title="" class="plainText">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tenetur ratione,
-                        placeat perferendis doloremque ex eum delectus.
-                    </a>
-                </div>
-                <div style="font-style: italic">di Mario Rossi</div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-lg-4">
-                <figure>
-                    <a href="" title="img">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
-                            class="imgOnTop">
-                    </a>
-                </figure>
-                <div class="titleBoldOnTop">
-                    <a href="" title="" class="plainText">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta enim a quia.
-                    </a>
-                </div>
-                <div style="font-style: italic">di Mario Rossi</div>
-            </div>
-        </div>
-    </article>
-
-</div>
 
     <!-- Footer -->
     <footer>
