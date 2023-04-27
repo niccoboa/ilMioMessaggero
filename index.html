@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Niccolò Boanini-->
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
@@ -17,17 +17,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 
-    <header class="container">
+    <header id="header">
+        <div class="container">
+            <div class="row" id="ht">
+                <div class="col-md-4 col-sm-12 h-50">
+                    <button class="nav-link text-black plainText" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ri-menu-2-line"></i>
+                    </button>
 
-        <div class="row" id="ht">
-            <div class="col-md-4 col-sm-12 h-50">
-                <button class="nav-link text-black plainText" type="button" id="dropdownMenuButton"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="ri-menu-2-line"></i>
-                </button>
-
-                <div class="dropdown-menu w-50" aria-labelledby="dropdownMenuButton">
+                    <div class="dropdown-menu w-50" aria-labelledby="dropdownMenuButton">
                         <div class="text-center text-md-start mt-5">
                             <div class="row mt-3">
                                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -36,767 +37,779 @@
                                         Sezioni
                                     </h6>
                                     <p>
-                                        <a href="" class="plainText">Persone</a>
+                                        <a href="#" class="plainText">Persone</a>
                                     </p>
                                     <p>
-                                        <a href="" class="plainText">Italia</a>
+                                        <a href="#" class="plainText">Italia</a>
                                     </p>
                                     <p>
-                                        <a href="" class="plainText">Mondo</a>
+                                        <a href="#" class="plainText">Mondo</a>
                                     </p>
                                     <p>
-                                        <a href="" class="plainText">Economia</a>
+                                        <a href="#" class="plainText">Economia</a>
                                     </p>
                                     <p>
-                                        <a href="" class="plainText">Altro</a>
+                                        <a href="#" class="plainText">Altro</a>
                                     </p>
                                 </div>
-        
+
                                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                                     <!-- Links -->
                                     <h6 class="text-uppercase fw-bold mb-4">
                                         Edizioni
                                     </h6>
                                     <p>
-                                        <a href="" class="plainText">Firenze</a>
+                                        <a href="#" class="plainText">Firenze</a>
                                     </p>
                                     <p>
-                                        <a href="" class="plainText">Sesto Fiorentino</a>
+                                        <a href="#" class="plainText">Sesto Fiorentino</a>
                                     </p>
                                     <p>
-                                        <a href="" class="plainText">Calenzano</a>
+                                        <a href="#" class="plainText">Calenzano</a>
                                     </p>
                                     <p>
-                                        <a href="" class="plainText">Rifredi</a>
+                                        <a href="#" class="plainText">Rifredi</a>
                                     </p>
                                     <p>
-                                        <a href="" class="plainText">Castello</a>
+                                        <a href="#" class="plainText">Castello</a>
                                     </p>
                                 </div>
                             </div>
                         </div>
-                </div>
-                
-                <div class="input-group" id="searchArea">
-                    <button type="text" id="searchLensIcon">
-                        <i class="ri-search-line"></i></button>
-                    <input type="search" class="form-control form-control-sm" style="border:0" placeholder="CERCA">
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-12" id="hc">
-                <ul class="list-group list-group-horizontal justify-content-center flex-wrap" id="topics">
-                    <li><a class="plainText" href="#" title="News1">Prima notizia</a></li>
-                    <li><a class="plainText" href="#" title="News2">Seconda notizia</a></li>
-                    <li><a class="plainText" href="#" title="News3">Terza notizia</a></li>
-                    <li><a class="plainText" href="#" title="News4">Quarta e ultima notizia rapida</a></li>
-                </ul>
-            </div>
-
-            <div class="col-lg-4 col-md-12" id="hr">
-
-                <div class="flex-container" id="joinUs">
-                    <button type="button" class="buttonEmphasis m-1"> ABBONATI </button>
-                    <button type="button" class="buttonDark"> ACCEDI </button>
-                </div>
-
-                <ul class="col-sm navbar-nav d-flex flex-row" id="social">
-                    <li class="nav-item me-3 me-lg-0">
-                        <a class="nav-link" href="#">
-                            <i class="ri-facebook-fill plainText"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item me-3 me-lg-0">
-                        <a class="nav-link" href="#">
-                            <i class="ri-youtube-fill plainText"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item me-3 me-lg-0">
-                        <a class="nav-link" href="#">
-                            <i class="ri-instagram-fill plainText"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item me-3 me-lg-0">
-                        <a class="nav-link" href="https://github.com/niccoboa/ilMioMessaggero" target="_blank">
-                            <i class="ri-github-fill plainText"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item me-3 me-lg-0">
-                        <a class="nav-link" href="#">
-                            <i class="fab fa-twitter text-white"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row" id="hb">
-
-            <div class="col-3 d-none d-md-block">
-                <div id="forecast">
-                    <a href="#" class="plainText" title="Forecast">
-                        <span>
-                            Aprile
-                        </span>
-                        <span>
-                            <img src="img/sole.svg" height="20px" width="20px">
-                        </span>
-                        <span>22.7 °C</span>
-                        <span>Firenze</span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-md-6" id="header-logo">
-                <a href="#" class="plainText" title="Forecast"></a>
-
-                <a href="https://github.com/niccoboa/ilMioMessaggero" target="_blank">
-                    <img src="img/logoilmio.svg" alt="ilMioMessaggero" width="100%"></a>
-            </div>
-
-            <div class="col-3 d-none d-md-block">
-                <div id="horoscope">
-                    <div>
-                        <div style="font-weight: bold">Toro</div>
-                        <div>Dal 20 aprile </div>
                     </div>
-                    <div>
-                        <img src="img/toro.svg" width="50px" height="50px">
+
+                    <div class="input-group" id="searchArea">
+                        <button type="text" id="searchLensIcon">
+                            <i class="ri-search-line"></i></button>
+                        <input type="search" class="form-control form-control-sm" style="border:0" placeholder="CERCA">
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-12" id="hc">
+                    <ul class="list-group list-group-horizontal justify-content-center flex-wrap" id="topics">
+                        <li><a class="plainText" href="#" title="News1">Prima notizia</a></li>
+                        <li><a class="plainText" href="#" title="News2">Seconda notizia</a></li>
+                        <li><a class="plainText" href="#" title="News3">Terza notizia</a></li>
+                        <li><a class="plainText" href="#" title="News4">Quarta e ultima notizia rapida</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-12" id="hr">
+
+                    <div class="flex-container" id="joinUs">
+                        <button type="button" class="buttonEmphasis m-1"> ABBONATI </button>
+                        <button type="button" class="buttonDark"> ACCEDI </button>
+                    </div>
+
+                    <ul class="col-sm navbar-nav d-flex flex-row" id="social">
+                        <li class="nav-item me-3 me-lg-0">
+                            <a class="nav-link" href="#">
+                                <i class="ri-facebook-fill plainText"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item me-3 me-lg-0">
+                            <a class="nav-link" href="#">
+                                <i class="ri-youtube-fill plainText"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item me-3 me-lg-0">
+                            <a class="nav-link" href="#">
+                                <i class="ri-instagram-fill plainText"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item me-3 me-lg-0">
+                            <a class="nav-link" href="https://github.com/niccoboa/ilMioMessaggero" target="_blank">
+                                <i class="ri-github-fill plainText"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item me-3 me-lg-0">
+                            <a class="nav-link" href="#">
+                                <i class="fab fa-twitter text-white"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row" id="hb">
+
+                <div class="col-3 d-none d-md-block">
+                    <div id="forecast">
+                        <a href="#" class="plainText" title="Forecast">
+                            <span>
+                                Aprile
+                            </span>
+                            <span>
+                                <img src="img/sole.svg" height="20px" width="20px">
+                            </span>
+                            <span>22.7 °C</span>
+                            <span>Firenze</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6" id="header-logo">
+                    <a href="#" class="plainText" title="Forecast"></a>
+
+                    <a href="https://github.com/niccoboa/ilMioMessaggero" target="_blank">
+                        <img src="img/logoilmio.svg" alt="ilMioMessaggero" width="100%"></a>
+                </div>
+
+                <div class="col-3 d-none d-md-block">
+                    <div id="horoscope">
+                        <div>
+                            <div style="font-weight: bold">Toro</div>
+                            <div>Dal 20 aprile </div>
+                        </div>
+                        <div>
+                            <img src="img/toro.svg" width="50px" height="50px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav nav-fill" id="hnav">
+                <a class="nav-link plainText" href="#">PERSONE</a>
+                <a class="nav-link plainText" href="#">ITALIA</a>
+                <a class="nav-link plainText" href="#">MONDO</a>
+                <a class="nav-link plainText" href="#">ECONOMIA</a>
+                <a class="nav-link plainText" href="#">POLITICA</a>
+                <a class="nav-link plainText" href="#">SALUTE</a>
+                <a class="nav-link plainText" href="#">SCHEDE</a>
+                <a class="nav-link plainText" href="#">SPORT</a>
+                <a class="nav-link plainText" href="#">SPETTACOLI</a>
+                <a class="nav-link plainText" href="#">DONNA</a>
+                <a class="nav-link plainText" href="#">MOTORI</a>
+                <a class="nav-link buttonEmphasis text-white plainText" href="#">FIRENZE</a>
+                <div class="dropdown">
+                    <button class="nav-link dropdown-toggle text-black plainText dropdown-toggle" type="button"
+                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        EDIZIONI LOCALI
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Sesto Fiorentino</a></li>
+                        <li><a class="dropdown-item" href="#">Calenzano</a></li>
+                        <li><a class="dropdown-item" href="#">Rifredi</a></li>
+                        <li><a class="dropdown-item" href="#">Castello</a></li>
+                    </ul>
+                </div>
+
             </div>
         </div>
-
-        <div class="nav nav-fill" id="hnav">
-            <a class="nav-link plainText" href="">PERSONE</a>
-            <a class="nav-link plainText" href="">ITALIA</a>
-            <a class="nav-link plainText" href="">MONDO</a>
-            <a class="nav-link plainText" href="">ECONOMIA</a>
-            <a class="nav-link plainText" href="">POLITICA</a>
-            <a class="nav-link plainText" href="">SALUTE</a>
-            <a class="nav-link plainText" href="">SCHEDE</a>
-            <a class="nav-link plainText" href="">SPORT</a>
-            <a class="nav-link plainText" href="">SPETTACOLI</a>
-            <a class="nav-link plainText" href="">DONNA</a>
-            <a class="nav-link plainText" href="">MOTORI</a>
-            <a class="nav-link buttonEmphasis text-white plainText" href="">FIRENZE</a>
-            <div class="dropdown">
-                <button class="nav-link dropdown-toggle text-black plainText dropdown-toggle" type="button"
-                    id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                    EDIZIONI LOCALI
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <li><a class="dropdown-item" href="#">Sesto Fiorentino</a></li>
-                    <li><a class="dropdown-item" href="#">Calenzano</a></li>
-                    <li><a class="dropdown-item" href="#">Rifredi</a></li>
-                    <li><a class="dropdown-item" href="#">Castello</a></li>
-                </ul>
-            </div>
-
-        </div>
-
     </header>
 
     <!-- Giornale -->
     <div class="container">
+        
+        <!-- Notizie in alto -->
+        <div class="container">
 
-        <div class="row paddingsDivsOnTop">
+            <div class="row paddingsDivsOnTop">
 
-            <div class="col-xs-12 col-sm-6 col-lg-3">
-                <figure>
-                    <a href="" title="img">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg" class="imgOnTop">
-                    </a>
-                </figure>
-                <div class="titleBoldOnTop">
-                    <a href="" title="" class="plainText">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elitttt.
-                    </a>
+                <div class="d-xs-none col-sm-6 col-md-6 col-lg-3 d-none d-md-block">
+                    <figure>
+                        <a href="#" title="img">
+                            <img src="img/articoli/firenzee.webp" class="imgOnTop">
+                        </a>
+                    </figure>
+                    <div class="titleBoldOnTop">
+                        <a href="#" title="" class="plainText">
+                            Firenze: cosa visitare in un weekend.
+                        </a>
+                    </div>
+                    <div style="font-style: italic">di Mario Rossi</div>
                 </div>
-                <div style="font-style: italic">di Mario Rossi</div>
-            </div>
 
-            <div class="col-xs-12 col-sm-6 col-lg-3">
-                <figure>
-                    <a href="" title="img">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg" class="imgOnTop">
-                    </a>
-                </figure>
-                <div class="titleBoldOnTop">
-                    <a href="" title="" class="plainText">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </a>
+                <div class="d-xs-none col-sm-6 col-md-6 col-lg-3 d-none d-md-block">
+                    <figure>
+                        <a href="#" title="img">
+                            <img src="img/articoli/asteroide.webp" class="imgOnTop">
+                        </a>
+                    </figure>
+                    <div class="titleBoldOnTop">
+                        <a href="#" title="" class="plainText">
+                            Asteroide grande come Torre Eiffel si sta avvicinando alla Terra.
+                        </a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-xs-12 col-sm-6 col-lg-3">
-                <figure>
-                    <a href="" title="img">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg" class="imgOnTop">
-                    </a>
-                </figure>
-                <div class="titleBoldOnTop">
-                    <a href="" title="" class="plainText">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </a>
+                <div class="d-xs-none col-sm-6 col-md-6 col-lg-3 d-none d-md-block">
+                    <figure>
+                        <a href="#" title="img">
+                            <img src="img/articoli/daftpunk.webp" class="imgOnTop">
+                        </a>
+                    </figure>
+                    <div class="titleBoldOnTop">
+                        <a href="#" title="" class="plainText">
+                            I Daft Punk si sono sciolti anche a causa della A.I.
+                        </a>
+                    </div>
+                    <div style="font-style: italic">di Giorgio Moroder</div>
                 </div>
-            </div>
-            <div class="col-xs-12 col-lg-3 col-sm-6">
-                <a href="" title=""><img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
-                        class="advOnTopRight"></a>
+                <div class="col-lg-3 col-md-6 col-sm-6 d-none d-md-block">
+                    <a href="#" title=""><img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                            class="advOnTopRight"></a>
+                </div>
             </div>
         </div>
-    </div>
 
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8" id="notizie">
-                <article class="vspace">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-6">
-                            <figure>
-                                <a href="" title="">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
-                                        class="imgMainArticle">
-                                </a>
-                            </figure>
+        <!-- Corpo del giornale -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8" id="notizie">
+                    <article class="vspace">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <figure>
+                                    <a href="#" title="">
+                                        <img src="img/articoli/nico.webp"
+                                            class="imgMainArticle">
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="col-sm-12 col-md-6 list">
+                                <div class="uppercaseClickBait">
+                                    <a href="#" title="" class="plainText">FIORENTINA</a>
+                                </div>
+                                <div class="titleGridArticle">
+                                    <a href="#" title="" class="plainText">
+                                        Coppa Italia, Fiorentina-Cremonese: viola a un passo dalla finale.
+                                    </a>
+                                    <a href="#" title="" class="emphasis">
+                                        Le probabili formazioni
+                                    </a>
+                                    <a href="#" title="" class="plainText">
+                                        della gara.
+                                    </a>
+                                </div>
+                                <ul>
+                                    <a href="#" title="" class="plainText">
+                                        <li>Conference</li>
+                                    </a>
+                                    <a href="#" title="" class="plainText">
+                                        <li>Italiano</li>
+                                    </a>
+                                    <a href="#" title="" class="plainText">
+                                        <li>Nico</li>
+                                    </a>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-sm-12 col-md-6 list">
-                            <div class="uppercaseClickBait">
-                                <a href="" title="" class="plainText">CLICK BAIT</a>
-                            </div>
-                            <div class="titleGridArticle">
-                                <a href="" title="" class="plainText">
-                                    Orsa JJ4, i veterinari: «Non ne provocheremo la morte». Ora è in un recinto con
-                                    Papillon,
+                    </article>
+
+                    <article class="list">
+                        <figure>
+                            <a href="#" title="">
+                                <img src="img/articoli/ing.jpeg"
+                                    class="imgMainArticleTwo">
+                            </a>
+                        </figure>
+
+                        <div class="list">
+                            <div class="titleMainArticle">
+                                <a href="#" title="" class="plainText">
+                                    FacolCup, buona la prima. Ingegneria - Umanistica 6-0.
                                 </a>
-                                <a href="" title="" class="emphasis">
-                                    l'unico esemplare evaso due volte.
+                            </div>
+                            <div class="titleMainArticle emphasis">
+                                <a href="#" title="" class="plainText">
+                                    L'approfondimento.
                                 </a>
                             </div>
+
                             <ul>
-                                <a href="" title="" class="plainText">
+                                <a href="#" title="" class="plainText">
                                     <li>Primo</li>
                                 </a>
-                                <a href="" title="" class="plainText">
+                                <a href="#" title="" class="plainText">
                                     <li>Secondo</li>
                                 </a>
-                                <a href="" title="" class="plainText">
+                                <a href="#" title="" class="plainText">
                                     <li>Terzo</li>
                                 </a>
                             </ul>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="list">
-                    <figure>
-                        <a href="" title="">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
-                                class="imgMainArticleTwo">
-                        </a>
-                    </figure>
-
-                    <div class="list">
-                        <div class="titleMainArticle">
-                            <a href="" title="" class="plainText">
-                                Lorem ipsum dolor sit amet consectetur
-                            </a>
-                        </div>
-                        <div class="titleMainArticle emphasis">
-                            <a href="" title="" class="plainText">
-                                adipisicing elit.
-                            </a>
-                        </div>
-
-                        <ul>
-                            <a href="" title="" class="plainText">
-                                <li>Primo</li>
-                            </a>
-                            <a href="" title="" class="plainText">
-                                <li>Secondo</li>
-                            </a>
-                            <a href="" title="" class="plainText">
-                                <li>Terzo</li>
-                            </a>
-                        </ul>
-                        <div style="font-style: italic">di Mario Rossi</div>
-                    </div>
-                </article>
-
-                <hr>
-
-                <article>
-                    <div class="paddingsDivsOnTop row">
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
-                            <figure>
-                                <a href="" title="img">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
-                                        class="imgOnTop">
-                                </a>
-                            </figure>
-                            <div class="titleBoldOnTop">
-                                <a href="" title="" class="plainText">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                </a>
-                            </div>
                             <div style="font-style: italic">di Mario Rossi</div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
-                            <figure>
-                                <a href="" title="img">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
-                                        class="imgOnTop">
-                                </a>
-                            </figure>
-                            <div class="titleBoldOnTop">
-                                <a href="" title="" class="plainText">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                </a>
-                            </div>
-                            <div style="font-style: italic">di Mario Rossi</div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
-                            <figure>
-                                <a href="" title="img">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
-                                        class="imgOnTop">
-                                </a>
-                            </figure>
-                            <div class="titleBoldOnTop">
-                                <a href="" title="" class="plainText">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                </a>
-                            </div>
-                            <div style="font-style: italic">di Mario Rossi</div>
-                        </div>
-                    </div>
-                </article>
-
-
-                <hr>
-
-                <article class="vspace">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-6">
-                            <figure>
-                                <a href="" title="">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
-                                        class="imgMainArticle">
-                                </a>
-                            </figure>
-                        </div>
-                        <div class="col-sm-12 col-md-6">
-                            <div class="uppercaseClickBait">
-                                <a href="" title="" class="plainText">CLICK BAIT</a>
-                            </div>
-                            <div class="titleGridArticle">
-                                <a href="" title="" class="plainText">
-                                    Questo è l'articolo principale del giorno.
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
-                                    Cose principali:
-                                </a>
-                            </div>
-                            <div class="list">
-                                <ul>
-                                    <a href="" title="" class="plainText">
-                                        <li>Primo</li>
-                                    </a>
-                                    <a href="" title="" class="plainText">
-                                        <li>Secondo</li>
-                                    </a>
-                                    <a href="" title="" class="plainText">
-                                        <li>Terzo</li>
-                                    </a>
-                                </ul>
-                                <div style="font-style: italic">di Mario Rossi</div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <hr>
-                <article class="vspace">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-6">
-                            <figure>
-                                <a href="" title="">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
-                                        class="imgMainArticle">
-                                </a>
-                            </figure>
-                        </div>
-                        <div class="col-sm-12 col-md-6">
-                            <div class="uppercaseClickBait">
-                                <a href="" title="" class="plainText">CLICK BAIT</a>
-                            </div>
-                            <div class="titleGridArticle">
-                                <a href="" title="" class="plainText">
-                                    Questo è l'articolo principale del giorno.
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
-                                    Cose principali:
-                                </a>
-                            </div>
-                            <div class="list">
-                                <ul>
-                                    <a href="" title="" class="plainText">
-                                        <li>Primo</li>
-                                    </a>
-                                    <a href="" title="" class="plainText">
-                                        <li>Secondo</li>
-                                    </a>
-                                    <a href="" title="" class="plainText">
-                                        <li>Terzo</li>
-                                    </a>
-                                </ul>
-                                <div style="font-style: italic">di Mario Rossi</div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-
-                <article>
-                    <div class="paddingsDivsOnTop row">
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
-                            <figure>
-                                <a href="" title="img">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
-                                        class="imgOnTop">
-                                </a>
-                            </figure>
-                            <div class="titleBoldOnTop">
-                                <a href="" title="" class="plainText">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                </a>
-                            </div>
-                            <div style="font-style: italic">di Mario Rossi</div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
-                            <figure>
-                                <a href="" title="img">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
-                                        class="imgOnTop">
-                                </a>
-                            </figure>
-                            <div class="titleBoldOnTop">
-                                <a href="" title="" class="plainText">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                </a>
-                            </div>
-                            <div style="font-style: italic">di Mario Rossi</div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
-                            <figure>
-                                <a href="" title="img">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
-                                        class="imgOnTop">
-                                </a>
-                            </figure>
-                            <div class="titleBoldOnTop">
-                                <a href="" title="" class="plainText">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                </a>
-                            </div>
-                            <!-- <div style="font-style: italic">di Mario Rossi</div> -->
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-md-4">
-                <div class="somePadding lockedElement">
-                    <article class="myplayZone">
-                        <div class="paddingsDivsOnTop">
-                            <div id="myPlayIcon">
-                                <a href="" title="MyPlaySection">
-                                    <img src="img/myplay_adv.png" class="" height="40px">
-                                </a>
-                            </div>
-                        </div>
-                        <hr style="border: 1.5px solid black; margin: 0.5em auto;">
-                        <div>
-                            <figure>
-                                <a href="" title="">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
-                                        class="imgAside">
-                                </a>
-                            </figure>
-                            <div class="titleAsideArticle">
-                                <a href="" title="" class="plainText">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt esse
-                                    perspiciatis voluptate ex quos earum ab enim officiis, at beatae vero vitae
-                                    suscipit, itaque doloribus eligendi. Assumenda, in voluptatum.
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="row vspaceAside">
-                            <div class="col-4">
-                                <figure>
-                                    <a href="" title=""><img
-                                            src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
-                                            width="100%" height="90px">
-                                    </a>
-                                </figure>
-                            </div>
-                            <div class="col-8">
-                                <div class="articleTitle-s">
-                                    <a href="" title="" class="plainText">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar
-                                        tempor erat, eu ultricies massa bibendum ut.
-                                    </a>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="col-4">
-                                <figure>
-                                    <a href="" title=""><img
-                                            src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
-                                            width="100%" height="90px">
-                                    </a>
-                                </figure>
-                            </div>
-                            <div class="col-8">
-                                <div class="articleTitle-s">
-                                    <a href="" title="" class="plainText">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar
-                                        tempor erat, eu ultricies massa bibendum ut.
-                                    </a>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="col-4">
-                                <figure>
-                                    <a href="" title=""><img
-                                            src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
-                                            width="100%" height="90px">
-                                    </a>
-                                </figure>
-                            </div>
-                            <div class="col-8">
-                                <div class="articleTitle-s">
-                                    <a href="" title="" class="plainText">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar
-                                        tempor erat, eu ultricies massa bibendum ut.
-                                    </a>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="col-4">
-                                <figure>
-                                    <a href="" title=""><img
-                                            src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
-                                            width="100%" height="90px">
-                                    </a>
-                                </figure>
-                            </div>
-                            <div class="col-8">
-                                <div class="articleTitle-s">
-                                    <a href="" title="" class="plainText">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar
-                                        tempor erat, eu ultricies massa bibendum ut.
-                                    </a>
-                                </div>
-                            </div>
-
                         </div>
                     </article>
 
-                    <article class="followUs">
-                        <div class="paddingsDivsOnTop little">
-                            <div class="titleAsideArticle">
-                                Seguici e iscriviti anche su:
+                    <hr>
+
+                    <article>
+                        <div class="paddingsDivsOnTop row">
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                <figure>
+                                    <a href="#" title="img">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
+                                            class="imgOnTop">
+                                    </a>
+                                </figure>
+                                <div class="titleBoldOnTop">
+                                    <a href="#" title="" class="plainText">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </a>
+                                </div>
+                                <div style="font-style: italic">di Mario Rossi</div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                <figure>
+                                    <a href="#" title="img">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
+                                            class="imgOnTop">
+                                    </a>
+                                </figure>
+                                <div class="titleBoldOnTop">
+                                    <a href="#" title="" class="plainText">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </a>
+                                </div>
+                                <div style="font-style: italic">di Mario Rossi</div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                <figure>
+                                    <a href="#" title="img">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
+                                            class="imgOnTop">
+                                    </a>
+                                </figure>
+                                <div class="titleBoldOnTop">
+                                    <a href="#" title="" class="plainText">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </a>
+                                </div>
+                                <div style="font-style: italic">di Mario Rossi</div>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <hr>
+
+                    <article class="vspace">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <figure>
+                                    <a href="#" title="">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
+                                            class="imgMainArticle">
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="uppercaseClickBait">
+                                    <a href="#" title="" class="plainText">CLICK BAIT</a>
+                                </div>
+                                <div class="titleGridArticle">
+                                    <a href="#" title="" class="plainText">
+                                        Questo è l'articolo principale del giorno.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+                                        Cose principali:
+                                    </a>
+                                </div>
+                                <div class="list">
+                                    <ul>
+                                        <a href="#" title="" class="plainText">
+                                            <li>Primo</li>
+                                        </a>
+                                        <a href="#" title="" class="plainText">
+                                            <li>Secondo</li>
+                                        </a>
+                                        <a href="#" title="" class="plainText">
+                                            <li>Terzo</li>
+                                        </a>
+                                    </ul>
+                                    <div style="font-style: italic">di Mario Rossi</div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <hr>
+                    <article class="vspace">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <figure>
+                                    <a href="#" title="">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
+                                            class="imgMainArticle">
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="uppercaseClickBait">
+                                    <a href="#" title="" class="plainText">CLICK BAIT</a>
+                                </div>
+                                <div class="titleGridArticle">
+                                    <a href="#" title="" class="plainText">
+                                        Questo è l'articolo principale del giorno.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+                                        Cose principali:
+                                    </a>
+                                </div>
+                                <div class="list">
+                                    <ul>
+                                        <a href="#" title="" class="plainText">
+                                            <li>Primo</li>
+                                        </a>
+                                        <a href="#" title="" class="plainText">
+                                            <li>Secondo</li>
+                                        </a>
+                                        <a href="#" title="" class="plainText">
+                                            <li>Terzo</li>
+                                        </a>
+                                    </ul>
+                                    <div style="font-style: italic">di Mario Rossi</div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <article>
+                        <div class="paddingsDivsOnTop row">
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                <figure>
+                                    <a href="#" title="img">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
+                                            class="imgOnTop">
+                                    </a>
+                                </figure>
+                                <div class="titleBoldOnTop">
+                                    <a href="#" title="" class="plainText">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </a>
+                                </div>
+                                <div style="font-style: italic">di Mario Rossi</div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                <figure>
+                                    <a href="#" title="img">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
+                                            class="imgOnTop">
+                                    </a>
+                                </figure>
+                                <div class="titleBoldOnTop">
+                                    <a href="#" title="" class="plainText">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </a>
+                                </div>
+                                <div style="font-style: italic">di Mario Rossi</div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                <figure>
+                                    <a href="#" title="img">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
+                                            class="imgOnTop">
+                                    </a>
+                                </figure>
+                                <div class="titleBoldOnTop">
+                                    <a href="#" title="" class="plainText">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </a>
+                                </div>
+                                <!-- <div style="font-style: italic">di Mario Rossi</div> -->
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="somePadding lockedElement">
+                        <article class="myplayZone">
+                            <div class="paddingsDivsOnTop">
+                                <div id="myPlayIcon">
+                                    <a href="#" title="MyPlaySection">
+                                        <img src="img/myplay_adv.png" class="" height="40px">
+                                    </a>
+                                </div>
+                            </div>
+                            <hr style="border: 1.5px solid black; margin: 0.5em auto;">
+                            <div>
+                                <figure>
+                                    <a href="#" title="">
+                                        <img src="img/articoli/anziana.webp"
+                                            class="imgAside">
+                                    </a>
+                                </figure>
+                                <div class="titleAsideArticle">
+                                    <a href="#" title="" class="plainText">
+                                        “Suo figlio ha fatto un incidente, servono soldi”, ma l’anziana non ci casca e sventa la truffa
+                                    </a>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="row vspaceAside">
+                                <div class="col-4">
+                                    <figure class="d-none d-lg-block">
+                                        <a href="#" title=""><img
+                                                src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                                width="100%" height="auto">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-8 col-12">
+                                    <div class="articleTitle-s">
+                                        <a href="#" title="" class="plainText">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar
+                                            tempor erat, eu ultricies massa bibendum ut.
+                                        </a>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-4">
+                                    <figure class="d-none d-lg-block">
+                                        <a href="#" title=""><img
+                                                src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                                width="100%" height="auto">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-8 col-12">
+                                    <div class="articleTitle-s">
+                                        <a href="#" title="" class="plainText">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar
+                                            tempor erat, eu ultricies massa bibendum ut.
+                                        </a>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-4">
+                                    <figure class="d-none d-lg-block">
+                                        <a href="#" title=""><img
+                                                src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                                width="100%" height="auto">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-8 col-12">
+                                    <div class="articleTitle-s">
+                                        <a href="#" title="" class="plainText">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar
+                                            tempor erat, eu ultricies massa bibendum ut.
+                                        </a>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-4">
+                                    <figure class="d-none d-lg-block">
+                                        <a href="#" title=""><img
+                                                src="https://upload.wikimedia.org/wikipedia/commons/4/43/Red_flag.svg"
+                                                width="100%" height="auto">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-8 col-xs-8 col-12">
+                                    <div class="articleTitle-s">
+                                        <a href="#" title="" class="plainText">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar
+                                            tempor erat, eu ultricies massa bibendum ut.
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+
+                        <article class="followUs">
+                            <div class="paddingsDivsOnTop little">
+                                <div class="titleAsideArticle">
+                                    Seguici e iscriviti anche su:
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <a href="#" class="plainText" title="Facebook">
+                                            <i class="ri-youtube-fill"></i>
+                                        </a>
+                                        <span class="titleAsideSocial">Youtube</span>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#" class="plainText" title="Instagram">
+                                            <i class="ri-instagram-line"></i>
+                                        </a>
+                                        <span class="titleAsideSocial">Instagram</span>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#" class="plainText" title="Facebook">
+                                            <i class="ri-facebook-circle-fill"></i>
+                                        </a>
+                                        <span class="titleAsideSocial">Facebook</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <figure>
+                                        <a href="#" title=""><img
+                                                src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
+                                                width="100%" height="80px"></a>
+                                    </figure>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="colpoDOcchio">
+                            <div>
+                                <h5>
+                                    COLPO D'OCCHIO
+                                </h5>
+                                <!-- <span>
+                            ============
+                        </span> -->
                             </div>
                             <div class="row">
                                 <div class="col-4">
-                                    <a href="" class="plainText" title="Facebook">
-                                        <i class="ri-youtube-fill"></i>
-                                    </a>
-                                    <span class="titleAsideSocial">Youtube</span>
-                                </div>
-                                <div class="col-4">
-                                    <a href="" class="plainText" title="Instagram">
-                                        <i class="ri-instagram-line"></i>
-                                    </a>
-                                    <span class="titleAsideSocial">Instagram</span>
-                                </div>
-                                <div class="col-4">
-                                    <a href="" class="plainText" title="Facebook">
-                                        <i class="ri-facebook-circle-fill"></i>
-                                    </a>
-                                    <span class="titleAsideSocial">Facebook</span>
-                                </div>
-                            </div>
-                            <div>
-                                <figure>
-                                    <a href="" title=""><img
+                                    <a href="#" title=""><img
                                             src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
-                                            width="100%" height="80px"></a>
-                                </figure>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="colpoDOcchio">
-                        <div>
-                            <h5>
-                                COLPO D'OCCHIO
-                            </h5>
-                            <!-- <span>
-                            ============
-                        </span> -->
-                        </div>
-                        <div class="row">
-                            <div class="col-4">
-                                <a href="" title=""><img
-                                        src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
-                                        width="100%" height="90px"></a>
-                            </div>
-                            <div class="col-8">
-                                <div>
-                                    <a href="" title="" class="plainText" style="font-weight: 650px">MARIO ROSSI</a>
+                                            width="100%" height="90px"></a>
                                 </div>
-                                <div class="titleAsideSocial">
-                                    <a href="" title="" class="plainText">UN TALENTO STRAORDINARIO
-                                    </a>
+                                <div class="col-8">
+                                    <div>
+                                        <a href="#" title="" class="plainText" style="font-weight: 650px">MARIO ROSSI</a>
+                                    </div>
+                                    <div class="titleAsideSocial">
+                                        <a href="#" title="" class="plainText">UN TALENTO STRAORDINARIO
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </article>
+                        </article>
 
-                </div>
-            </div> <!-- fine barra laterale -->
+                    </div>
+                </div> <!-- fine barra laterale -->
 
-        </div>
+            </div>
 
-        <div class="testatabox default firenze">
-            <h3 class="firenze">
-                <a href="#" title="Firenze" class="plainText">
-                    <img id="logo_firenze" src="img/duomo.svg" width="42" class="filter-green">
-                    FIRENZE
-                </a>
-                <span class="more d-none d-md-block">
-                    <a href="#" title="Tutti gli articoli" class="plainText">
-                        Tutti gli articoli
+            <div class="testatabox default firenze">
+                <h3 class="firenze">
+                    <a href="#" title="Firenze" class="plainText">
+                        <img id="logo_firenze" src="img/duomo.svg" width="42" class="filter-green">
+                        FIRENZE
                     </a>
-                    <span class="mappa">
-                        <a href="#" title="Vedi la Mappa" class="plainText">
-                            <img src="img/map.svg" width="20">
-                            Mappa
+                    <span class="more d-none d-md-block">
+                        <a href="#" title="Tutti gli articoli" class="plainText">
+                            Tutti gli articoli
                         </a>
+                        <span class="mappa">
+                            <a href="#" title="Vedi la Mappa" class="plainText">
+                                <img src="img/map.svg" width="20">
+                                Mappa
+                            </a>
+                        </span>
                     </span>
-                </span>
-            </h3>
-        </div>
-
-        <article>
-            <div class="paddingsDivsOnTop row">
-                <div class="col-xs-12 col-sm-6 col-lg-4">
-                    <figure>
-                        <a href="" title="img">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg" class="imgOnTop">
-                        </a>
-                    </figure>
-                    <div class="titleBoldOnTop">
-                        <a href="" title="" class="plainText">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque praesentium quisquam.
-                        </a>
-                    </div>
-                    <div style="font-style: italic">di Mario Rossi</div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-lg-4">
-                    <figure>
-                        <a href="" title="img">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg" class="imgOnTop">
-                        </a>
-                    </figure>
-                    <div class="titleBoldOnTop">
-                        <a href="" title="" class="plainText">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quas maxime assumenda magni
-                            totam. Quisquam, laudantium eos quibusdam fugiat dolorem.
-                        </a>
-                    </div>
-                    <div style="font-style: italic">di Mario Rossi</div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-lg-4">
-                    <figure>
-                        <a href="" title="img">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg" class="imgOnTop">
-                        </a>
-                    </figure>
-                    <div class="titleBoldOnTop">
-                        <a href="" title="" class="plainText">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate laudantium qui
-                            doloremque debitis natus ex odit, commodi nulla, facilis eos.
-                        </a>
-                    </div>
-                    <div style="font-style: italic">di Mario Rossi</div>
-                </div>
+                </h3>
             </div>
-        </article>
 
-        <div class="testatabox boxed centro sport">
-            <h3 class="sport">
-                SPORT
-            </h3>
-        </div>
-
-        <article>
-            <div class="paddingsDivsOnTop row">
-                <div class="col-xs-12 col-sm-6 col-lg-4">
-                    <figure>
-                        <a href="" title="img">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg" class="imgOnTop">
-                        </a>
-                    </figure>
-                    <div class="titleBoldOnTop">
-                        <a href="" title="" class="plainText">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus iusto optio quod, quam
-                            similique minus fugit ipsam quos impedit totam.
-                        </a>
+            <article>
+                <div class="paddingsDivsOnTop row">
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                        <figure>
+                            <a href="#" title="img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
+                                    class="imgOnTop">
+                            </a>
+                        </figure>
+                        <div class="titleBoldOnTop">
+                            <a href="#" title="" class="plainText">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque praesentium quisquam.
+                            </a>
+                        </div>
+                        <div style="font-style: italic">di Mario Rossi</div>
                     </div>
-                    <div style="font-style: italic">di Mario Rossi</div>
-                </div>
 
-                <div class="col-xs-12 col-sm-6 col-lg-4">
-                    <figure>
-                        <a href="" title="img">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg" class="imgOnTop">
-                        </a>
-                    </figure>
-                    <div class="titleBoldOnTop">
-                        <a href="" title="" class="plainText">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tenetur ratione,
-                            placeat perferendis doloremque ex eum delectus.
-                        </a>
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                        <figure>
+                            <a href="#" title="img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
+                                    class="imgOnTop">
+                            </a>
+                        </figure>
+                        <div class="titleBoldOnTop">
+                            <a href="#" title="" class="plainText">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quas maxime assumenda magni
+                                totam. Quisquam, laudantium eos quibusdam fugiat dolorem.
+                            </a>
+                        </div>
+                        <div style="font-style: italic">di Mario Rossi</div>
                     </div>
-                    <div style="font-style: italic">di Mario Rossi</div>
-                </div>
 
-                <div class="col-xs-12 col-sm-6 col-lg-4">
-                    <figure>
-                        <a href="" title="img">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg" class="imgOnTop">
-                        </a>
-                    </figure>
-                    <div class="titleBoldOnTop">
-                        <a href="" title="" class="plainText">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta enim a quia.
-                        </a>
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                        <figure>
+                            <a href="#" title="img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
+                                    class="imgOnTop">
+                            </a>
+                        </figure>
+                        <div class="titleBoldOnTop">
+                            <a href="#" title="" class="plainText">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate laudantium qui
+                                doloremque debitis natus ex odit, commodi nulla, facilis eos.
+                            </a>
+                        </div>
+                        <div style="font-style: italic">di Mario Rossi</div>
                     </div>
-                    <div style="font-style: italic">di Mario Rossi</div>
                 </div>
+            </article>
+
+            <div class="testatabox boxed centro sport">
+                <h3 class="sport">
+                    SPORT
+                </h3>
             </div>
-        </article>
 
+            <article>
+                <div class="paddingsDivsOnTop row">
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                        <figure>
+                            <a href="#" title="img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
+                                    class="imgOnTop">
+                            </a>
+                        </figure>
+                        <div class="titleBoldOnTop">
+                            <a href="#" title="" class="plainText">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus iusto optio quod,
+                                quam
+                                similique minus fugit ipsam quos impedit totam.
+                            </a>
+                        </div>
+                        <div style="font-style: italic">di Mario Rossi</div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                        <figure>
+                            <a href="#" title="img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
+                                    class="imgOnTop">
+                            </a>
+                        </figure>
+                        <div class="titleBoldOnTop">
+                            <a href="#" title="" class="plainText">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tenetur ratione,
+                                placeat perferendis doloremque ex eum delectus.
+                            </a>
+                        </div>
+                        <div style="font-style: italic">di Mario Rossi</div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                        <figure>
+                            <a href="#" title="img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Purple.svg"
+                                    class="imgOnTop">
+                            </a>
+                        </figure>
+                        <div class="titleBoldOnTop">
+                            <a href="#" title="" class="plainText">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta enim a quia.
+                            </a>
+                        </div>
+                        <div style="font-style: italic">di Mario Rossi</div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
     </div>
 
     <!-- Footer -->
@@ -804,7 +817,7 @@
         <div class="container">
             <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
                 <div class="me-5 d-none d-lg-block">
-                    <a href="" title="Il messaggero"><img src="img/logo.jpg" height="30px"></a>
+                    <a href="#" title="Il messaggero"><img src="img/logo.jpg" height="30px"></a>
                 </div>
             </section>
 
@@ -817,19 +830,19 @@
                                 Sezioni
                             </h6>
                             <p>
-                                <a href="" class="plainText">Persone</a>
+                                <a href="#" class="plainText">Persone</a>
                             </p>
                             <p>
-                                <a href="" class="plainText">Italia</a>
+                                <a href="#" class="plainText">Italia</a>
                             </p>
                             <p>
-                                <a href="" class="plainText">Mondo</a>
+                                <a href="#" class="plainText">Mondo</a>
                             </p>
                             <p>
-                                <a href="" class="plainText">Economia</a>
+                                <a href="#" class="plainText">Economia</a>
                             </p>
                             <p>
-                                <a href="" class="plainText">Altro</a>
+                                <a href="#" class="plainText">Altro</a>
                             </p>
                         </div>
 
@@ -839,19 +852,19 @@
                                 Edizioni Locali
                             </h6>
                             <p>
-                                <a href="" class="plainText">Firenze</a>
+                                <a href="#" class="plainText">Firenze</a>
                             </p>
                             <p>
-                                <a href="" class="plainText">Sesto Fiorentino</a>
+                                <a href="#" class="plainText">Sesto Fiorentino</a>
                             </p>
                             <p>
-                                <a href="" class="plainText">Calenzano</a>
+                                <a href="#" class="plainText">Calenzano</a>
                             </p>
                             <p>
-                                <a href="" class="plainText">Rifredi</a>
+                                <a href="#" class="plainText">Rifredi</a>
                             </p>
                             <p>
-                                <a href="" class="plainText">Castello</a>
+                                <a href="#" class="plainText">Castello</a>
                             </p>
                         </div>
 
@@ -861,19 +874,19 @@
                                 Multimedia
                             </h6>
                             <p>
-                                <a href="" class="plainText">Immagini</a>
+                                <a href="#" class="plainText">Immagini</a>
                             </p>
                             <p>
-                                <a href="" class="plainText">Video</a>
+                                <a href="#" class="plainText">Video</a>
                             </p>
                             <p>
-                                <a href="" class="plainText">Podcast</a>
+                                <a href="#" class="plainText">Podcast</a>
                             </p>
                             <p>
-                                <a href="" class="plainText">Remix</a>
+                                <a href="#" class="plainText">Remix</a>
                             </p>
                             <p>
-                                <a href="" class="plainText">Altro</a>
+                                <a href="#" class="plainText">Altro</a>
                             </p>
                         </div>
                     </div>
